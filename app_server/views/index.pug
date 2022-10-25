@@ -1,0 +1,42 @@
+extends layout
+
+block content
+  .h-100.d-flex.align-items-center.justify-content-center
+    section.h-100.gradient-form(style='background-color: #eee;')
+      .container.py-5.h-100
+        .row.d-flex.justify-content-center.align-items-center.h-100
+          .col-xl-10
+            .card.rounded-3.text-black
+              .row.g-0
+                .col-lg-6
+                  .card-body.p-md-5.mx-md-4
+                    .text-center
+                      img(src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp' style='width: 185px;' alt='logo')
+                      h4.mt-1.mb-5.pb-1 GM Finance Tracker 
+                    form
+                      p Please login to your account
+                      .form-outline.mb-4
+                        input#form2Example11.form-control(type='String' placeholder='User name')
+                        label.form-label(for='form2Example11') Email
+                      .form-outline.mb-4
+                        input#form2Example22.form-control(type='password' placeholder='Password')
+                        label.form-label(for='form2Example22') Password
+                      .text-center.pt-1.mb-5.pb-1
+                        a(href='/main')
+                          button.btn.btn-primary.btn-block.fa-lg.gradient-custom-2.mb-3(type='button')
+                            | Log
+                            | in
+                        a.text-muted(href='/register') Forgot password?
+                      .d-flex.align-items-center.justify-content-center.pb-4
+                        p.mb-0.me-2 Don&apos;t have an account?
+                        a(href='/register')
+                          button.btn.btn-outline-danger(type='button') Create new Account
+                .col-lg-6.d-flex.align-items-center.gradient-custom-2
+                  .text-white.px-3.py-4.p-md-5.mx-md-4
+                    h4.mb-4 We are here to help u finance a brighter fututre
+                    p.small.mb-0
+                      | Are goal is to provide are users with a managering abilty with there finnacane
+                      | We will generate the best finanicial portfolioes
+                      | Start here 
+
+
